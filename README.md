@@ -1,8 +1,12 @@
 # SpringMVCProject 学习项目
 
 **项目文件简介:**
-- mavan_01_pom : Maven项目POM文件总体配置说明
-- 
+- maven_01_pom : Maven项目POM文件总体配置说明
+- maven_02_ssm : Maven项目分模块开发
+- maven_03_ssm_pojo : Maven项目分模块开发domain层
+- maven_03_ssm_dao : Maven项目分模块开发dao层
+- maven_03_ssm_service : Maven项目分模块开发service层
+- maven_03_ssm_controller : Maven项目分模块开发controller层
 - 
 
 
