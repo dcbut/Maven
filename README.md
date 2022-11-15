@@ -7,6 +7,8 @@
 - maven_03_ssm_dao : Maven项目分模块开发dao层
 - maven_03_ssm_service : Maven项目分模块开发service层
 - maven_03_ssm_controller : Maven项目分模块开发controller层
+- maven_04_parent : Maven项目聚合和继承
+- maven_parent : Maven项目聚合与继承工程
 - 
 
 

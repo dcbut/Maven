@@ -8,28 +8,46 @@
     <artifactId>maven_03_ssm_service</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!--配置当前工程继承自parent工程-->
+    <parent>
+        <groupId>com.dcxuexi</groupId>
+        <artifactId>maven_04_parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <!--设置父项目pom.xml位置路径-->
+        <relativePath>../maven_04_parent/pom.xml</relativePath>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
     <dependencies>
-        <dependency>
-            <groupId>com.dcxuexi</groupId>
-            <artifactId>maven_03_ssm_pojo</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>com.dcxuexi</groupId>
             <artifactId>maven_03_ssm_dao</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <!--排除依赖是隐藏当前资源对应的依赖关系-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>com.dcxuexi</groupId>-->
+<!--                    <artifactId>maven_03_ssm_pojo</artifactId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <groupId>org.mybatis</groupId>-->
+<!--                    <artifactId>mybatis</artifactId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <groupId>mysql</groupId>-->
+<!--                    <artifactId>mysql-connector-java</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
         </dependency>
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>5.2.15.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

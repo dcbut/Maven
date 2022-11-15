@@ -5,17 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.dcxuexi</groupId>
-    <artifactId>maven_03_ssm_pojo</artifactId>
+    <artifactId>maven_parent</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>maven_ssm_pojo</module>
+        <module>maven_ssm_dao</module>
+        <module>maven_ssm_service</module>
+        <module>maven_ssm_controller</module>
+        <module>maven_ssm</module>
+    </modules>
 
-    <!--配置当前工程继承自parent工程-->
-    <parent>
-        <groupId>com.dcxuexi</groupId>
-        <artifactId>maven_04_parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <!--设置父项目pom.xml位置路径-->
-        <relativePath>../maven_04_parent/pom.xml</relativePath>
-    </parent>
+
 
 
 </project>

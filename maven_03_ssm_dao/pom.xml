@@ -8,23 +8,22 @@
     <artifactId>maven_03_ssm_dao</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!--配置当前工程继承自parent工程-->
+    <parent>
+        <groupId>com.dcxuexi</groupId>
+        <artifactId>maven_04_parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <!--设置父项目pom.xml位置路径-->
+        <relativePath>../maven_04_parent/pom.xml</relativePath>
+    </parent>
+
     <dependencies>
         <dependency>
             <groupId>com.dcxuexi</groupId>
             <artifactId>maven_03_ssm_pojo</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <!--可选依赖是隐藏当前工程所依赖的资源，隐藏后对应资源将不具有依赖传递-->
+<!--            <optional>true</optional>-->
         </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.5.10</version>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.30</version>
-        </dependency>
-
     </dependencies>
-
 </project>
